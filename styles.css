@@ -22,14 +22,10 @@ body {
 
 
 #title {
-	text-align: center;
+	/*text-align: center;*/
 	border: 10px dotted pink;
   font-family: Buzz;
-}
-
-h2, h3{
-	text-align: center;
-  font-family: "Happy Monkey"
+  padding: 10px 0px;
 }
 
 #div-pics {
@@ -40,6 +36,12 @@ h2, h3{
 	height: 200px;
 }
 
+.subheading {
+	/*text-align: center;*/
+  font-family: "Happy Monkey";
+}
+
+
 .intro-img {
 	height:200px;
 	width:auto;
@@ -48,7 +50,13 @@ h2, h3{
 	border-radius: 20px;
 }
 
-.journal, .things, .track {
+.month {
+  font-family: "Happy Monkey";
+  padding:0;
+  margin: 0;
+}
+
+.journal, .passions , .tools{
   background-color: white;       /* Looks like paper */
   width: 80%;                    /* Doesn't touch the edges */
   margin: 20px auto;             /* Centers the card */
@@ -60,7 +68,7 @@ h2, h3{
 
 
 /* Styling for links specifically inside the journal section */
-.journal a, .things a, .track a{
+.journal a, .tools a, .passions a{
   display: inline-block;      /* Makes it the size of the text, not full width */
   background-color: lightblue;  /* The "Garden Pond" Teal you liked */
   color: #222222;               /* White text */
@@ -73,18 +81,19 @@ h2, h3{
   font-family: Buzz;
 }
 
-/* Optional: Changes color when you hover over it */
-.journal a:hover, .things a:hover, .track a:hover{
-  background-color: #4682B4;  /* Turns Steel Blue when you touch it */
-  cursor: pointer;
+.journal a {
+  background-color: #4682B4;
 }
 
-.things a {
-    background-color: hotpink; /* Overrides the teal color just for things */
-		color:white;
+.tools a {
+  background-color: beige;
 }
 
-.track a {
-	background-color: lavender;
-	color: #222222;
+.passions a {
+  background-color: lavender;
+}
+
+.journal a:hover, .tools a:hover, .passions a:hover {
+  color: hotpink;
+
 }
